@@ -24,7 +24,8 @@
         "adhoc-android": "bash ./resources/script/adhoc-android.sh",
         "adhoc-ios": "bash ./resources/script/adhoc-ios.sh",
         "test": "jasmine-node tests/browser",
-        "test-wp8": "npm run build:setup && phonegap --verbose build wp8 --test"
+        "test-wp8": "npm run build:setup && phonegap --verbose build wp8 --test",
+        "integration-test": "jasmine-node spec"
     },
     "dependencies": {
     },
@@ -34,8 +35,9 @@
         "jasmine-node": "1.14.5",
         "less": "1.6.0",
         "npm": "1.4.10",
-        "phonegap": "5.2.2",
+        "phonegap": "5.3.8",
         "request": "2.65.0",
+        "wd": "0.4.0",
         "xml2js": "0.4.12"
     }
 }
